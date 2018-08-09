@@ -16,9 +16,9 @@
     esutils "^2.0.2"
     js-tokens "^3.0.0"
 
-"@bearer/bearer-cli@^0.41.4":
-  version "0.41.4"
-  resolved "https://registry.npmjs.org/@bearer/bearer-cli/-/bearer-cli-0.41.4.tgz#8e2306091e5859ceaaf1d5a3c5b96a9d249b2fc6"
+"@bearer/bearer-cli@^0.41.8":
+  version "0.41.8"
+  resolved "https://registry.npmjs.org/@bearer/bearer-cli/-/bearer-cli-0.41.8.tgz#e93fed31831d64e2fef1f7eb73dbc5c1f858bb1c"
   dependencies:
     "@bearer/intents" "^0.41.4"
     "@bearer/templates" "^0.41.1"
@@ -66,20 +66,20 @@
     uuid "^3.3.2"
     webpack "^4.12.0"
 
-"@bearer/cli@latest":
-  version "0.41.4"
-  resolved "https://registry.npmjs.org/@bearer/cli/-/cli-0.41.4.tgz#d28c1d259e6c916efc7ec83b8f06a7417b3b72ac"
+"@bearer/cli@0.41.8":
+  version "0.41.8"
+  resolved "https://registry.npmjs.org/@bearer/cli/-/cli-0.41.8.tgz#ec856e9526ff408cd6dde1f533b54e22f2f9b4a1"
   dependencies:
-    "@bearer/bearer-cli" "^0.41.4"
+    "@bearer/bearer-cli" "^0.41.8"
     "@oclif/command" "^1"
     "@oclif/config" "^1"
     "@oclif/plugin-help" "^2"
     "@oclif/plugin-warn-if-update-available" "^1.3.9"
     tslib "^1"
 
-"@bearer/core@^0.41.1", "@bearer/core@latest":
-  version "0.41.1"
-  resolved "https://registry.npmjs.org/@bearer/core/-/core-0.41.1.tgz#7fa8a42614c5d3a353ee60472d5ed0319c861ced"
+"@bearer/core@0.41.8", "@bearer/core@^0.41.8":
+  version "0.41.8"
+  resolved "https://registry.npmjs.org/@bearer/core/-/core-0.41.8.tgz#7656f0892d7d2d99ff4fc9f431af6bd284703b12"
   dependencies:
     "@stencil/core" "0.11.2"
     babel-plugin-inline-dotenv "^1.1.2"
@@ -113,11 +113,11 @@
     fs-extra "^6.0.1"
     typescript "^2.9.2"
 
-"@bearer/ui@latest":
-  version "0.41.1"
-  resolved "https://registry.npmjs.org/@bearer/ui/-/ui-0.41.1.tgz#964a6987b2b6ec17e5fcd35ab298100673e8948d"
+"@bearer/ui@0.41.8":
+  version "0.41.8"
+  resolved "https://registry.npmjs.org/@bearer/ui/-/ui-0.41.8.tgz#62fd131ae41b87a62a0b1c9993af2c85898c0112"
   dependencies:
-    "@bearer/core" "^0.41.1"
+    "@bearer/core" "^0.41.8"
     "@stencil/core" "0.11.2"
     "@stencil/sass" "^0.0.5"
     bootstrap "^4.1.0"
