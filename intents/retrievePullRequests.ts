@@ -1,15 +1,13 @@
-import { RetrieveState, Toauth2Context } from '@bearer/intents'
+import { RetrieveState, Toauth2Context, TRetrieveStateCallback } from '@bearer/intents'
 import Client from './client'
-// We import some types to validate the input / output
-import { PullRequest, ScenarioState } from './types'
 
-export default class retrieveStateIntent {
-  static intentName: string = 'retrieveState'
+export default class retrievePullRequests {
+  static intentName: string = 'retrievePullRequests'
   static intentType: any = RetrieveState
 
-  static action(context: Toauth2Context, _params, state: ScenarioState, callback: (state: any) => void) {
+  static action(context: Toauth2Context, _params: any, state, callback: TRetrieveStateCallback) {
     // Create a fetcher to retrieve all the information through GitHub API
-    const pullRequestFetcher = (savedPR: PullRequest): Promise<any> =>
+    const pullRequestFetcher = (savedPR: any): Promise<any> =>
       Client(context.authAccess.accessToken)
         .get(`repos/${savedPR.fullName}/pulls/${savedPR.number}`)
         .then(response => response.data)
@@ -22,7 +20,7 @@ export default class retrieveStateIntent {
       .map(pullRequestFetcher)
     )
     .then(pullRequests => {
-    	callback(pullRequests)
+    	callback({ data: pullRequests })
     })
   }
 

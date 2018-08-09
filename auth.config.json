@@ -5,7 +5,8 @@
   "tokenParams": {},
   "authorizationParams": {},
   "config": {
-    "scope": []
+    "accessType": "offline",
+    "scope": ["repo"]
   },
   "setupViews": [
     {
@@ -18,7 +19,5 @@
       "label": "Client Secret",
       "controlName": "clientSecret"
     }
-  ],
-  "configViews": [
   ]
 }

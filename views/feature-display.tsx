@@ -8,7 +8,6 @@ import '@bearer/ui'
 export class FeatureDisplay {
   // Create a referenceId Property
   @Prop() referenceId: string
-
   render() {
     return (
       // Add the referenceId

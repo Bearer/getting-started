@@ -7,27 +7,23 @@ import '@bearer/ui'
 })
 export class DisplayAttachedPullRequests {
   @State() loading: boolean = true
-
-  // Connect RetrieveState Intent
-  @Intent('RetrieveState', IntentType.RetrieveState) retrieveState: any
+  // Connect retrievePullRequests Intent
+  @Intent('retrievePullRequests', IntentType.RetrieveState) retrievePullRequests: any
 
   // Adding Watcher to handle referenceId changes
   @Watch('referenceId')
   handler() {
     this.componentDidLoad()
   }
-  
-  // We define a BearerState decorator binded to prs
+
   @BearerState({
-    // `attachedPullRequests` is defined in the `<feature-action />` component
     statePropName: 'attachedPullRequests'
   }) prs: Array<any> = []
 
-
   componentDidLoad() {
-    this.loading = false
+    this.loading = true
     // We use the Intent to retrieve the stored Pull Requests
-    this.retrieveState()
+    this.retrievePullRequests()
       .then(({ data }) => {
         if (data) {
           this.prs = data

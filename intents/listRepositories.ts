@@ -1,18 +1,18 @@
-import { GetCollection, Toauth2Context } from '@bearer/intents'
+import { FetchData, Toauth2Context, TFetchDataCallback } from '@bearer/intents'
 import Client from './client'
 
 export default class listRepositoriesIntent {
   static intentName: string = 'listRepositories'
-  static intentType: any = GetCollection
+  static intentType: any = FetchData
 
-  static action(context: Toauth2Context, params: any, callback: (params: any) => void) {
+
+  static action(context: Toauth2Context, params: any, body: any, callback: TFetchDataCallback) {
     Client(context.authAccess.accessToken).get('user/repos')
       .then(({ data }) => {
-        callback({ collection: data })
+        callback({ data })
       })
-      .catch(e => {
-        console.log(e);
-      	callback({ collection: []})
+      .catch(error => {
+      	callback({ error: error.toString() })
       })
   }
 }
