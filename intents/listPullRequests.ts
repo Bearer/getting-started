@@ -1,7 +1,7 @@
 import { FetchData, Toauth2Context, TFetchDataCallback } from '@bearer/intents'
 import Client from './client'
 
-export default class listPullRequestsIntent {
+export default class ListPullRequestsIntent {
   static intentName: string = 'listPullRequests'
   static intentType: any = FetchData
 

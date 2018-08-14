@@ -1,7 +1,7 @@
 import { RetrieveState, Toauth2Context, TRetrieveStateCallback } from '@bearer/intents'
 import Client from './client'
 
-export default class retrievePullRequests {
+export default class RetrievePullRequests {
   static intentName: string = 'retrievePullRequests'
   static intentType: any = RetrieveState
 

@@ -2,7 +2,6 @@ import { Component, Intent, BearerFetch } from '@bearer/core'
 
 @Component({
   tag: 'list-repositories',
-  styleUrl: 'listRepositories.css',
   shadow: true
 })
 export class ListRepositories {

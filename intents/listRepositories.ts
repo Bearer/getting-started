@@ -1,7 +1,7 @@
 import { FetchData, Toauth2Context, TFetchDataCallback } from '@bearer/intents'
 import Client from './client'
 
-export default class listRepositoriesIntent {
+export default class ListRepositoriesIntent {
   static intentName: string = 'listRepositories'
   static intentType: any = FetchData
 

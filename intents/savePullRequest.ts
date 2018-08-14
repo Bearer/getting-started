@@ -1,6 +1,6 @@
 import { SaveState, Toauth2Context, TSaveStateCallback } from '@bearer/intents'
 
-export default class savePullRequestIntent {
+export default class SavePullRequestIntent {
   static intentName: string = 'savePullRequest'
   static intentType: any = SaveState
 

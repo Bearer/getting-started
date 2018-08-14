@@ -2,7 +2,6 @@ import { Component, Intent, BearerFetch, Prop } from '@bearer/core'
 
 @Component({
   tag: 'list-pull-requests',
-  styleUrl: 'listPullRequests.css',
   shadow: true
 })
 export class ListPullRequests {
