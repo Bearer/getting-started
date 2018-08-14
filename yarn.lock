@@ -16,13 +16,13 @@
     esutils "^2.0.2"
     js-tokens "^3.0.0"
 
-"@bearer/bearer-cli@^0.41.8":
-  version "0.41.8"
-  resolved "https://registry.npmjs.org/@bearer/bearer-cli/-/bearer-cli-0.41.8.tgz#e93fed31831d64e2fef1f7eb73dbc5c1f858bb1c"
+"@bearer/bearer-cli@^0.52.0":
+  version "0.52.0"
+  resolved "https://registry.yarnpkg.com/@bearer/bearer-cli/-/bearer-cli-0.52.0.tgz#8d5425bcf86334229a978c9ffb806b321420366f"
   dependencies:
-    "@bearer/intents" "^0.41.4"
-    "@bearer/templates" "^0.41.1"
-    "@bearer/transpiler" "^0.41.1"
+    "@bearer/intents" "^0.52.0"
+    "@bearer/templates" "^0.52.0"
+    "@bearer/transpiler" "^0.52.0"
     "@koa/cors" "^2.2.2"
     amazon-cognito-identity-js "^2.0.3"
     archiver "^2.1.1"
@@ -30,6 +30,7 @@
     aws-sdk "^2.224.1"
     axios "^0.18.0"
     case "^1.5.5"
+    commander "^2.17.1"
     copy-template-dir "^1.4.0"
     cosmiconfig "^5.0.5"
     del "^3.0.0"
@@ -66,20 +67,20 @@
     uuid "^3.3.2"
     webpack "^4.12.0"
 
-"@bearer/cli@0.41.8":
-  version "0.41.8"
-  resolved "https://registry.npmjs.org/@bearer/cli/-/cli-0.41.8.tgz#ec856e9526ff408cd6dde1f533b54e22f2f9b4a1"
+"@bearer/cli@0.52.0":
+  version "0.52.0"
+  resolved "https://registry.yarnpkg.com/@bearer/cli/-/cli-0.52.0.tgz#cc93c554bdd0be0f7109d7e5a9d12d9d65fa8261"
   dependencies:
-    "@bearer/bearer-cli" "^0.41.8"
+    "@bearer/bearer-cli" "^0.52.0"
     "@oclif/command" "^1"
     "@oclif/config" "^1"
     "@oclif/plugin-help" "^2"
-    "@oclif/plugin-warn-if-update-available" "^1.3.9"
+    commander "^2.17.1"
     tslib "^1"
 
-"@bearer/core@0.41.8", "@bearer/core@^0.41.8":
-  version "0.41.8"
-  resolved "https://registry.npmjs.org/@bearer/core/-/core-0.41.8.tgz#7656f0892d7d2d99ff4fc9f431af6bd284703b12"
+"@bearer/core@0.52.0", "@bearer/core@^0.52.0":
+  version "0.52.0"
+  resolved "https://registry.yarnpkg.com/@bearer/core/-/core-0.52.0.tgz#9dc8f5ef5c54d1764f472e78d674563641106cc0"
   dependencies:
     "@stencil/core" "0.11.2"
     babel-plugin-inline-dotenv "^1.1.2"
@@ -90,22 +91,22 @@
     rollup-plugin-replace "^2.0.0"
     typescript "^2.9.2"
 
-"@bearer/intents@^0.41.4", "@bearer/intents@latest":
-  version "0.41.4"
-  resolved "https://registry.npmjs.org/@bearer/intents/-/intents-0.41.4.tgz#75df0570d659ce4e9d5a39a80abe926628a993d3"
+"@bearer/intents@0.52.0", "@bearer/intents@^0.52.0":
+  version "0.52.0"
+  resolved "https://registry.yarnpkg.com/@bearer/intents/-/intents-0.52.0.tgz#80c0e6ff4b4108c6dad42f3212730a29de55ca64"
   dependencies:
     axios "^0.18.0"
     typescript "^2.9.2"
 
-"@bearer/templates@^0.41.1":
-  version "0.41.1"
-  resolved "https://registry.npmjs.org/@bearer/templates/-/templates-0.41.1.tgz#32bb7897238b87075937d18d5e7c59b3b2782897"
+"@bearer/templates@^0.52.0":
+  version "0.52.0"
+  resolved "https://registry.yarnpkg.com/@bearer/templates/-/templates-0.52.0.tgz#a55bea3381d66d734e0b0c0658659bb6345d61f9"
   dependencies:
     typescript "^2.9.2"
 
-"@bearer/transpiler@^0.41.1":
-  version "0.41.1"
-  resolved "https://registry.npmjs.org/@bearer/transpiler/-/transpiler-0.41.1.tgz#47539cef3f5267d9eb3e81161ab80232bbdc2830"
+"@bearer/transpiler@^0.52.0":
+  version "0.52.0"
+  resolved "https://registry.yarnpkg.com/@bearer/transpiler/-/transpiler-0.52.0.tgz#ab495fcb3e9540633ca4d117c3e7c8f0f28713ba"
   dependencies:
     async-foreach "^0.1.3"
     case "^1.5.5"
@@ -113,11 +114,11 @@
     fs-extra "^6.0.1"
     typescript "^2.9.2"
 
-"@bearer/ui@0.41.8":
-  version "0.41.8"
-  resolved "https://registry.npmjs.org/@bearer/ui/-/ui-0.41.8.tgz#62fd131ae41b87a62a0b1c9993af2c85898c0112"
+"@bearer/ui@0.52.0":
+  version "0.52.0"
+  resolved "https://registry.yarnpkg.com/@bearer/ui/-/ui-0.52.0.tgz#a4055041dbe7278aed9b3beb2bb760eaf55dd17a"
   dependencies:
-    "@bearer/core" "^0.41.8"
+    "@bearer/core" "^0.52.0"
     "@stencil/core" "0.11.2"
     "@stencil/sass" "^0.0.5"
     bootstrap "^4.1.0"
@@ -148,7 +149,7 @@
   version "1.1.0"
   resolved "https://registry.npmjs.org/@nodelib/fs.stat/-/fs.stat-1.1.0.tgz#50c1e2260ac0ed9439a181de3725a0168d59c48a"
 
-"@oclif/command@^1", "@oclif/command@^1.4.21", "@oclif/command@^1.4.30":
+"@oclif/command@^1", "@oclif/command@^1.4.30":
   version "1.4.36"
   resolved "https://registry.npmjs.org/@oclif/command/-/command-1.4.36.tgz#cca1e02d8264f34be9c2d692a3c81efc0de15fdf"
   dependencies:
@@ -157,14 +158,14 @@
     debug "^3.1.0"
     semver "^5.5.0"
 
-"@oclif/config@^1", "@oclif/config@^1.6.17":
+"@oclif/config@^1":
   version "1.6.33"
   resolved "https://registry.npmjs.org/@oclif/config/-/config-1.6.33.tgz#61906143b30751d96dd29991c20c214bf4d9e4ff"
   dependencies:
     debug "^3.1.0"
     tslib "^1.9.2"
 
-"@oclif/errors@^1.0.11", "@oclif/errors@^1.1.2":
+"@oclif/errors@^1.1.2":
   version "1.1.2"
   resolved "https://registry.npmjs.org/@oclif/errors/-/errors-1.1.2.tgz#2a54aae07a7655cc4523cae270d0a50cbc5dbef3"
   dependencies:
@@ -197,19 +198,6 @@
     string-width "^2.1.1"
     widest-line "^2.0.0"
     wrap-ansi "^3.0.1"
-
-"@oclif/plugin-warn-if-update-available@^1.3.9":
-  version "1.3.9"
-  resolved "https://registry.npmjs.org/@oclif/plugin-warn-if-update-available/-/plugin-warn-if-update-available-1.3.9.tgz#ed1f55eea994b0e2bd918b4353daa0d937e84ad6"
-  dependencies:
-    "@oclif/command" "^1.4.21"
-    "@oclif/config" "^1.6.17"
-    "@oclif/errors" "^1.0.11"
-    chalk "^2.4.1"
-    debug "^3.1.0"
-    fs-extra "^6.0.1"
-    http-call "^5.1.2"
-    semver "^5.5.0"
 
 "@stencil/core@0.11.2":
   version "0.11.2"
@@ -1460,7 +1448,7 @@ command-line-args@^5.0.2:
     lodash.camelcase "^4.3.0"
     typical "^2.6.1"
 
-commander@^2.16.0, commander@^2.9.0:
+commander@^2.16.0, commander@^2.17.1, commander@^2.9.0:
   version "2.17.1"
   resolved "https://registry.npmjs.org/commander/-/commander-2.17.1.tgz#bd77ab7de6de94205ceacc72f1716d29f20a77bf"
 
@@ -2885,16 +2873,6 @@ http-assert@^1.3.0:
     deep-equal "~1.0.1"
     http-errors "~1.6.1"
 
-http-call@^5.1.2:
-  version "5.1.4"
-  resolved "https://registry.npmjs.org/http-call/-/http-call-5.1.4.tgz#fc37a1f6638ece82aba3d12eb6030f0889da850a"
-  dependencies:
-    content-type "^1.0.4"
-    debug "^3.1.0"
-    is-retry-allowed "^1.1.0"
-    is-stream "^1.1.0"
-    tunnel-agent "^0.6.0"
-
 http-errors@1.6.2:
   version "1.6.2"
   resolved "https://registry.npmjs.org/http-errors/-/http-errors-1.6.2.tgz#0a002cc85707192a7e7946ceedc11155f60ec736"
@@ -3341,7 +3319,7 @@ is-relative@^1.0.0:
   dependencies:
     is-unc-path "^1.0.0"
 
-is-retry-allowed@^1.0.0, is-retry-allowed@^1.1.0:
+is-retry-allowed@^1.0.0:
   version "1.1.0"
   resolved "https://registry.npmjs.org/is-retry-allowed/-/is-retry-allowed-1.1.0.tgz#11a060568b67339444033d0125a61a20d564fb34"
 
